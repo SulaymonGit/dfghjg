@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .signup {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+    }
+
+    .text-section {
+      max-width: 45%;
+    }
+
+    .text-section h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .text-section h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .text-section p {
+      margin: 1rem 0;
+    }
+
+    .text-section h3 {
+      font-size: 1.8rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      background: #000;
+      color: #fff;
+    }
+
+    .social-icons i {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .image-section img {
+      width: 300px;
+      height: auto;
+      object-fit: contain;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+    }
+
+    /* Themes */
+    .theme1 {
+      background: linear-gradient(to right, #f6a259, #fcd5b5);
+      color: #000;
+    }
+
+    .theme2 {
+      background: linear-gradient(to right, #2d2d2d, #8c8c8c);
+      color: #fff;
+    }
+
+    .theme3 {
+      background: linear-gradient(to right, #7bc7f3, #d4f1ff);
+      color: #000;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      color: #000;
+    }
+
+    .theme2 .swiper-button-prev,
+    .theme2 .swiper-button-next {
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide theme1">
+        <div class="container">
+          <header>
+            <div class="logo">👑 KING</div>
+            <nav>
+              <a href="#">Shop</a>
+              <a href="#">Brands</a>
+              <a href="#">Contact us</a>
+              <button class="signup">Sign up</button>
+            </nav>
+          </header>
+
+          <div class="content">
+            <div class="text-section">
+              <h1>Exquisite Watches</h1>
+              <h2><span>Choose Luxury,</span> <strong>Choose Us</strong></h2>
+              <p>Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship – watch</p>
+              <h3>$430.00</h3>
+              <div class="social-icons">
+                <i>🌐</i> <i>🐦</i> <i>📺</i>
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="./Снимок экрана 2025-04-14 190925.png" alt="Watch 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide theme2">
+        <div class="container">
+          <header>
+            <div class="logo">👑 KING</div>
+            <nav>
+              <a href="#">Shop</a>
+              <a href="#">Brands</a>
+              <a href="#">Contact us</a>
+              <button class="signup">Sign up</button>
+            </nav>
+          </header>
+
+          <div class="content">
+            <div class="text-section">
+              <h1>Modern Elegance</h1>
+              <h2><span>Feel the Style,</span> <strong>Feel the Time</strong></h2>
+              <p>Unmatched beauty in every tick – perfect for evening events and professionals who value time.</p>
+              <h3>$520.00</h3>
+              <div class="social-icons">
+                <i>🌐</i> <i>🐦</i> <i>📺</i>
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="./Снимок экрана 2025-04-14 191039.png" alt="Watch 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide theme3">
+        <div class="container">
+          <header>
+            <div class="logo">👑 KING</div>
+            <nav>
+              <a href="#">Shop</a>
+              <a href="#">Brands</a>
+              <a href="#">Contact us</a>
+              <button class="signup">Sign up</button>
+            </nav>
+          </header>
+
+          <div class="content">
+            <div class="text-section">
+              <h1>Timeless Classic</h1>
+              <h2><span>Masterpiece of Precision,</span> <strong>Timeless Charm</strong></h2>
+              <p>Built with a legacy of craftsmanship, perfect for collectors and lovers of vintage style.</p>
+              <h3>$610.00</h3>
+              <div class="social-icons">
+                <i>🌐</i> <i>🐦</i> <i>📺</i>
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="./Снимок экрана 2025-04-14 191103.png" alt="Watch 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="./Снимок экрана 2025-04-14 191133.png"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>
